@@ -680,3 +680,64 @@ section{margin-bottom:64px}
   text-decoration:none;
   opacity:.85;
 }
+
+
+/* =====================================================
+   HERO IMAGE — MOBILE UX POLISH
+===================================================== */
+
+/* Mobile-first hero balance */
+@media (max-width: 768px) {
+
+  .section--hero{
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .hero-media{
+    margin-bottom: 18px;
+  }
+
+  .hero-media img{
+    min-height: 260px;              /* reduce visual dominance */
+    height: 38vh;                  /* responsive but controlled */
+    max-height: 360px;             /* prevent overfill */
+    object-fit: cover;
+    object-position: center 40%;   /* reveal more natural framing */
+  }
+
+  .hero-content{
+    padding-inline: 16px;
+  }
+
+}
+
+
+/* =====================================================
+   HEADER CTA — MOBILE UX POLISH
+===================================================== */
+
+@media (max-width: 640px) {
+
+  .site-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-align: center;
+  }
+
+  .site-brand{
+    font-size: 0.95rem;
+  }
+
+  .site-header .btn--call{
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+
+}
