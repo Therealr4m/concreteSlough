@@ -811,10 +811,6 @@ section{margin-bottom:64px}
 }
 
 /* TRUST BAR POP */
-.trust-bar {
-  border-top: 3px solid var(--accent-blue);
-  border-bottom: 3px solid var(--accent-blue);
-}
 
 .trust-icon {
   color: var(--accent-blue);
@@ -868,3 +864,6 @@ section{margin-bottom:64px}
     border-left-width: 4px;
   }
 }
+
+
+
