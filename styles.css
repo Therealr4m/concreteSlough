@@ -876,3 +876,98 @@ section{margin-bottom:64px}
 
 
 
+/* ==========================================
+   MOBILE UX ELEVATION — CLEAN & TRUSTED
+========================================== */
+
+@media (max-width: 768px) {
+
+  /* 1. Improve overall breathing room rhythm */
+  .section {
+    padding: 40px 0;
+  }
+
+  .section + .section {
+    margin-top: 10px;
+  }
+
+  /* 2. Reduce visual heaviness (too many borders on mobile feels busy) */
+  .section--hero,
+  .section--gallery,
+  .card {
+    border-left-width: 3px;
+  }
+
+  .card {
+    box-shadow: 0 8px 20px rgba(0,0,0,.06);
+  }
+
+  /* 3. HERO IMAGE — make it feel premium, not overpowering */
+  .hero-media img {
+    height: 32vh;
+    min-height: 220px;
+    max-height: 300px;
+    object-position: center 45%;
+  }
+
+  /* 4. HERO CONTENT — improve reading flow */
+  .heading-xl {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .hero-content .text {
+    font-size: 0.98rem;
+  }
+
+  /* 5. CTA — make it feel solid and thumb-friendly */
+  .btn {
+    min-height: 52px;
+    font-size: 1rem;
+  }
+
+  .cta-group {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  /* 6. TRUST BAR — make it feel like a premium stack, not cramped */
+  .trust-bar {
+    padding: 16px 12px;
+  }
+
+  .trust-item {
+    padding: 10px 0;
+  }
+
+  .trust-item strong {
+    display: block;
+    font-size: 0.95rem;
+  }
+
+  .text-small {
+    font-size: 0.85rem;
+  }
+
+  /* 7. IMAGE GRID — reduce dominance */
+  .image-grid img {
+    height: 190px;
+  }
+
+  /* 8. NAV CARDS — reduce heaviness */
+  .nav-card {
+    padding: 22px;
+  }
+
+  .nav-card h3 {
+    font-size: 1.2rem;
+  }
+
+  /* 9. Final CTA — make it feel intentional */
+  .section--cta {
+    padding: 40px 18px;
+  }
+
+}
+
+
