@@ -969,5 +969,36 @@ section{margin-bottom:64px}
   }
 
 }
+/* =====================================================
+   EMAIL CONTACT FORM
+===================================================== */
 
+.contact-form{
+  margin-top:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
 
+.contact-form label{
+  font-weight:700;
+  font-size:.9rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid var(--border);
+  font-family:inherit;
+  font-size:.95rem;
+}
+
+.contact-form textarea{
+  resize:vertical;
+}
+
+.contact-form button{
+  margin-top:10px;
+  align-self:flex-start;
+}
