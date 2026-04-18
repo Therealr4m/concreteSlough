@@ -26,10 +26,6 @@
 
 
 
-
-
-
-
 /* =====================================================
    RESET
 ===================================================== */
@@ -114,24 +110,36 @@ section{margin-bottom:64px}
   display:none;
 }
 
+.site-nav-dropdown summary{
+  list-style:none;
+}
+  
+details{
+  position:relative;
+}
+
+
+
 /* dropdown menu */
 .nav-dropdown-menu{
-  position:absolute;
-  top:100%;
-  left:0;
-  width:100%;
-
+  display:none;
   background:#fff;
-
   border:1px solid var(--border);
   border-radius:12px;
-
   box-shadow:var(--shadow-md);
-
-  display:none;
   padding:6px 0;
+  margin-top:6px;
+}
 
-  z-index:5;
+/* ONLY apply dropdown positioning on desktop */
+@media(min-width:768px){
+  .nav-dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    z-index:5;
+  }
 }
 
 /* open dropdown */
@@ -161,11 +169,25 @@ details[open] .nav-arrow{
   transform:rotate(180deg);
 }
 
+/* Tap / click feedback */
+.site-nav-link:active{
+  background: rgba(31,79,216,.12); /* uses your brand-blue tone */
+  transform: scale(0.98);
+}
 
+/* Open state (active dropdown) */
+details[open] .site-nav-link{
+  background: rgba(31,79,216,.08);
+  border-color: var(--brand-light);
+  box-shadow: var(--shadow-sm);
+}
 
-
-
-
+/* Desktop hover polish */
+@media (hover:hover){
+  .site-nav-link:hover{
+    background: rgba(31,79,216,.06);
+  }
+}
 
 /* =====================================================
    NAVIGATION — CLEAN, TRUSTED
