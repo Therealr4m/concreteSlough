@@ -24,6 +24,12 @@
 }
 
 
+
+
+
+
+
+
 /* =====================================================
    RESET
 ===================================================== */
@@ -54,6 +60,112 @@ a{text-decoration:none;color:inherit}
 }
 
 section{margin-bottom:64px}
+
+
+
+
+
+/* =====================================================
+   SITE NAVIGATION (SILO NAV)
+   Clean dropdown navigation for services / areas / blogs
+===================================================== */
+
+.site-nav{
+  max-width:var(--max);
+  margin:28px auto;
+  padding:0 clamp(16px,4vw,32px);
+
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+@media(min-width:768px){
+  .site-nav{
+    grid-template-columns:repeat(4,1fr);
+  }
+}
+
+/* dropdown wrapper */
+.site-nav-dropdown{
+  position:relative;
+}
+
+/* nav button */
+.site-nav-link{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:14px 16px;
+
+  font-weight:800;
+  font-size:.95rem;
+
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:12px;
+
+  cursor:pointer;
+}
+
+/* remove default arrow */
+.site-nav-link::-webkit-details-marker{
+  display:none;
+}
+
+/* dropdown menu */
+.nav-dropdown-menu{
+  position:absolute;
+  top:100%;
+  left:0;
+  width:100%;
+
+  background:#fff;
+
+  border:1px solid var(--border);
+  border-radius:12px;
+
+  box-shadow:var(--shadow-md);
+
+  display:none;
+  padding:6px 0;
+
+  z-index:5;
+}
+
+/* open dropdown */
+details[open] .nav-dropdown-menu{
+  display:block;
+}
+
+/* dropdown links */
+.nav-dropdown-menu a{
+  display:block;
+  padding:10px 16px;
+
+  font-size:.9rem;
+  font-weight:600;
+}
+
+.nav-dropdown-menu a:hover{
+  background:var(--soft-blue);
+}
+
+/* arrow animation */
+.nav-arrow{
+  transition:transform .2s ease;
+}
+
+details[open] .nav-arrow{
+  transform:rotate(180deg);
+}
+
+
+
+
+
+
 
 /* =====================================================
    NAVIGATION — CLEAN, TRUSTED
