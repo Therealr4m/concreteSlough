@@ -23,9 +23,6 @@
   --max:1180px;
 }
 
-
-
-
 /* =====================================================
    RESET
 ===================================================== */
@@ -56,9 +53,6 @@ a{text-decoration:none;color:inherit}
 }
 
 section{margin-bottom:64px}
-
-
-
 
 
 /* =====================================================
@@ -188,101 +182,6 @@ details[open] .site-nav-link{
     background: rgba(31,79,216,.06);
   }
 }
-
-/* =====================================================
-   NAVIGATION — CLEAN, TRUSTED
-===================================================== */
-
-.header{
-  background:#fff;
-  border-bottom:1px solid var(--border);
-}
-
-.nav{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:14px 0;
-}
-
-.brand{
-  font-weight:900;
-  color:var(--brand-blue);
-  font-size:1.05rem;
-}
-
-.nav-links{
-  display:flex;
-  gap:18px;
-  align-items:center;
-}
-
-.nav-links a{
-  font-weight:700;
-  color:#374151;
-}
-
-.nav-links a:hover{
-  color:var(--brand-blue);
-}
-
-/* =====================================================
-   HERO — HIGH IMPACT, CLEAN
-===================================================== */
-
-.hero{
-  position:relative;
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  min-height:420px;
-  box-shadow:var(--shadow-md);
-}
-
-.hero-bg{
-  position:absolute;
-  inset:0;
-}
-
-.hero-bg img{
-  height:100%;
-  object-fit:cover;
-}
-
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    180deg,
-    rgba(0,0,255,.25),
-    rgba(15,23,42,.85)
-  );
-}
-
-.hero-overlay{
-  position:relative;
-  z-index:2;
-  padding:36px 24px;
-  max-width:720px;
-  margin:auto;
-  text-align:center;
-}
-
-.hero h1{
-  color:#fff;
-  font-size:clamp(2rem,4vw,3rem);
-  font-weight:900;
-  line-height:1.05;
-  margin-bottom:16px;
-}
-
-.top-hero-p,
-.second-top-hero-p{
-  color:#e5e7eb;
-  font-size:1.05rem;
-  margin-bottom:12px;
-}
-
 /* =====================================================
    BUTTONS — CALL-FOCUSED
 ===================================================== */
@@ -296,38 +195,6 @@ details[open] .site-nav-link{
   font-weight:900;
   transition:.15s ease;
 }
-
-.btn-phone{
-  background:linear-gradient(90deg,var(--accent),var(--brand-light));
-  color:#fff;
-  box-shadow:0 10px 22px rgba(0,0,255,.35);
-}
-
-.btn-phone:hover{
-  transform:translateY(-2px);
-}
-
-/* =====================================================
-   TRUST BAR
-===================================================== */
-
-.top-trust{
-  background:#fff;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow-sm);
-  display:grid;
-  grid-template-columns:1fr;
-  gap:14px;
-  padding:18px;
-}
-
-
-@media (min-width: 768px){
-  .image-grid{
-    grid-template-columns:repeat(3, minmax(0, 1fr));
-  }
-}
-
 
 .trust-item{text-align:center}
 .trust-item strong{font-weight:900}
@@ -348,8 +215,6 @@ details[open] .site-nav-link{
   max-width:65ch;
     margin-bottom:16px;
 }
-
-
 
 
 .kicker{
@@ -391,25 +256,6 @@ details[open] .site-nav-link{
 }
 
 /* =====================================================
-   IMAGE BLOCKS
-===================================================== */
-
-.service-image,
-.map-wrap,
-.gallery img{
-  border-radius:var(--radius);
-  box-shadow:var(--shadow-md);
-  overflow:hidden;
-}
-
-.image-caption{
-  font-size:.85rem;
-  color:var(--muted);
-  text-align:center;
-  margin-top:10px;
-}
-
-/* =====================================================
    MAP
 ===================================================== */
 
@@ -425,7 +271,6 @@ details[open] .site-nav-link{
 /* =====================================================
    FOOTER
 ===================================================== */
-
 .footer{
   margin-top:80px;
   padding:40px 20px;
@@ -433,16 +278,6 @@ details[open] .site-nav-link{
   font-size:.9rem;
   color:var(--muted);
   border-top:1px solid var(--border);
-}
-
-/* =====================================================
-   MOBILE POLISH
-===================================================== */
-
-@media(max-width:768px){
-  section{margin-bottom:48px}
-  .card{padding:24px}
-  .hero{min-height:380px}
 }
 
 
@@ -503,8 +338,6 @@ details[open] .site-nav-link{
 .gallery-cta .btn{
   margin-top:10px;
 }
-
-
 /* =====================================================
    CTA GROUP — STRUCTURE & BREATHING ROOM
 ===================================================== */
@@ -642,17 +475,6 @@ details[open] .site-nav-link{
   transform:translateX(4px);
 }
 
-
-
-
-/* =====================================================
-   WHY CHOOSE US — CLEAN CRO BLOCK (REUSABLE)
-===================================================== */
-
-.section--why{
-  position:relative;
-}
-
 /* Card styling (slight visual lift) */
 .card--why{
   background:
@@ -674,7 +496,7 @@ details[open] .site-nav-link{
 .card--why .list li{
   margin-bottom:8px;
 }
-
+ 
 /* =====================================================
    BLUE TEXT EMPHASIS (SUBTLE GLOW)
 ===================================================== */
@@ -708,13 +530,6 @@ details[open] .site-nav-link{
   text-shadow: 0 0 6px rgba(31,79,216,.2);
 }
 
-/* Optional subtle hover lift (desktop only) */
-@media (hover:hover){
-  .card--why:hover{
-    transform:translateY(-2px);
-    box-shadow:0 20px 44px rgba(31,79,216,.18);
-  }
-}
 
 
 
@@ -758,68 +573,6 @@ details[open] .site-nav-link{
 }
 
 
-
-/* =====================================================
-   GLOBAL HERO CONTENT ALIGNMENT FIX
-===================================================== */
-
-.section--hero .hero-content,
-.section--hero .hero-overlay {
-  max-width: var(--max);
-  margin-inline: auto;
-  padding-inline: clamp(16px, 5vw, 32px);
-}
-
-
-@media (min-width: 1024px) {
-  .section--hero .hero-content,
-  .section--hero .hero-overlay {
-    padding-inline: 40px;
-  }
-}
-
-
-/* =====================================================
-   DESKTOP FLOW & ALIGNMENT FIX
-===================================================== */
-
-.section{
-  max-width:var(--max);
-  margin-inline:auto;
-  padding-inline:clamp(16px, 4vw, 32px);
-}
-
-.section--hero{
-  display:grid;
-  align-items:center;
-  padding:64px 0;
-}
-
-@media (min-width: 900px){
-  .section--hero{
-    grid-template-columns: 1.1fr 0.9fr;
-    gap:48px;
-  }
-}
-
-.hero-media{
-  border-radius:var(--radius-lg);
-  overflow:hidden;
-  box-shadow:var(--shadow-md);
-}
-
-.hero-media img{
-  width:100%;
-  height:100%;
-  min-height:420px;
-  object-fit:cover;
-  object-position:center;
-}
-
-.hero-content{
-  padding-inline:clamp(16px, 3vw, 32px);
-}
-
 /* -------------------------------------
    IMAGE GRID DISCIPLINE (DESKTOP)
 ------------------------------------- */
@@ -846,15 +599,11 @@ details[open] .site-nav-link{
   display:block;
 }
 
-
-
-
 @media (max-width:768px){
   .image-grid img{
     height:220px;
   }
 }
-
 
 /* -------------------------------------
    CONTENT ROW CONTAINMENT
@@ -908,7 +657,6 @@ details[open] .site-nav-link{
   color: var(--muted);
 }
 
-
 /* =====================================================
    BLOG AUTHORITY LINKS & p text align
 ===================================================== */
@@ -922,36 +670,6 @@ details[open] .site-nav-link{
 .blog-link:hover{
   text-decoration:none;
   opacity:.85;
-
-}
-
-/* =====================================================
-   HERO IMAGE — MOBILE UX POLISH
-===================================================== */
-
-/* Mobile-first hero balance */
-@media (max-width: 768px) {
-
-  .section--hero{
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-  .hero-media{
-    margin-bottom: 18px;
-  }
-
-  .hero-media img{
-    min-height: 260px;              /* reduce visual dominance */
-    height: 38vh;                  /* responsive but controlled */
-    max-height: 360px;             /* prevent overfill */
-    object-fit: cover;
-    object-position: center 40%;   /* reveal more natural framing */
-  }
-
-  .hero-content{
-    padding-inline: 16px;
-  }
 
 }
 
@@ -981,60 +699,14 @@ details[open] .site-nav-link{
     justify-content: center;
     margin-top: 4px;
   }
-
 }
 
 /* ===============================
    BLUE AUTHORITY + UX FRAME
    =============================== */
-
 :root {
   --accent-blue: #1f6fff;
   --soft-blue: rgba(31,111,255,.08);
-}
-
-/* Page containment */
-.page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-inline: clamp(16px, 4vw, 34px);
-  
-}
-
-/* Section spacing */
-.section {
-  padding: clamp(48px, 8vw, 90px) 0;
-  
-}
-
-/* HERO FRAME */
-.section--hero {
-  position: relative;
-  padding-top: clamp(32px, 6vw, 72px);
-  border-left: 6px solid var(--accent-blue);
-  padding-left: clamp(18px, 4vw, 36px);
-}
-
-/* Hero image authority */
-.hero-media {
-  margin-bottom: 26px;
-  border-radius: 18px;
-  overflow: hidden;
-  border: 3px solid var(--accent-blue);
-  box-shadow: 0 20px 45px rgba(0,0,0,.15);
-}
-
-.hero-media img {
-  width: 100%;
-  height: auto;
-  max-height: 420px;
-  object-fit: cover;
-  display: block;
-}
-
-/* Hero content spacing */
-.hero-content {
-  padding-inline: clamp(10px, 3vw, 24px);
 }
 
 /* BLUE SIDE PANELS */
@@ -1048,18 +720,15 @@ details[open] .site-nav-link{
   box-shadow: 0 12px 28px rgba(0,0,0,.08);
 }
 
-
 /* Eyebrow authority */
 .eyebrow {
   
   color: var(--accent-blue);
   letter-spacing: .05em;
   font-weight: 600;
-  
 }
 
 /* TRUST BAR POP */
-
 .trust-icon {
   color: var(--accent-blue);
 }
@@ -1067,7 +736,7 @@ details[open] .site-nav-link{
 /* BUTTON POWER */
 .btn--call {
   box-shadow: 0 12px 30px rgba(31,111,255,.35);
-  
+
 }
 
 .btn--primary {
@@ -1101,24 +770,18 @@ details[open] .site-nav-link{
   border-top: 4px solid var(--accent-blue);
 }
 
-/* MOBILE TUNING */
 @media (max-width: 640px) {
-  .section--hero,
   .section--gallery {
     padding-left: 16px;
     border-left-width: 4px;
   }
-
   .card {
     border-left-width: 4px;
-  }
-}
-
+  }}
 
 /* ==========================================
    MOBILE UX ELEVATION — CLEAN & TRUSTED
 ========================================== */
-
 @media (max-width: 768px) {
 
   /* 1. Improve overall breathing room rhythm */
@@ -1138,26 +801,9 @@ details[open] .site-nav-link{
     border-left-width: 3px;
   }
 
+
   .card {
     box-shadow: 0 8px 20px rgba(0,0,0,.06);
-  }
-
-  /* 3. HERO IMAGE — make it feel premium, not overpowering */
-  .hero-media img {
-    height: 32vh;
-    min-height: 220px;
-    max-height: 300px;
-    object-position: center 45%;
-  }
-
-  /* 4. HERO CONTENT — improve reading flow */
-  .heading-xl {
-    font-size: 1.6rem;
-    line-height: 1.2;
-  }
-
-  .hero-content .text {
-    font-size: 0.98rem;
   }
 
   /* 5. CTA — make it feel solid and thumb-friendly */
@@ -1242,3 +888,188 @@ details[open] .site-nav-link{
   margin-top:10px;
   align-self:flex-start;
 }
+
+/* =====================================================
+   FULL IMAGE HERO — SLOUGH
+===================================================== */
+
+.hero-full{
+  position:relative;
+  min-height:640px;
+  overflow:hidden;
+  box-shadow:0 24px 60px rgba(0,0,0,.18);
+  margin-top:28px;
+}
+
+ /* FULL WIDTH HERO OVERRIDE */
+.hero-full{
+  width:100vw;
+
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+}
+
+/* background image */
+.hero-full img{
+  position:absolute;
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+  object-position:center;
+}
+
+/* dark overlay */
+.hero-full::after{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10,20,40,.30) 0%,
+      rgba(15,23,42,.58) 55%,
+      rgba(15,23,42,.82) 100%
+    );
+}
+
+  .hero-full::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(79,111,232,.20),
+      transparent 42%
+    );
+
+  z-index:1;
+}
+
+/* overlay layout */
+.hero-overlay{
+  position:relative;
+  z-index:2;
+
+  min-height:640px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  padding:36px;
+}
+
+/* content width */
+.hero-inner{
+  width:100%;
+  max-width:760px;
+}
+
+/* top label */
+.hero-kicker{
+  display:inline-block;
+
+  background:rgba(255,255,255,.12);
+
+  color:#fff;
+
+  padding:9px 16px;
+
+  border-radius:999px;
+
+  font-size:.78rem;
+  font-weight:800;
+
+  letter-spacing:.06em;
+
+  margin-bottom:18px;
+
+  backdrop-filter:blur(8px);
+
+  border:1px solid rgba(255,255,255,.18);
+}
+
+
+/* headline */
+.hero-full h1{
+  color:#fff;
+
+  font-size:clamp(2.6rem,5vw,4.3rem);
+
+  line-height:1.02;
+
+  font-weight:900;
+
+  letter-spacing:-0.04em;
+
+  margin-bottom:18px;
+}
+
+/* subtext */
+.hero-subtext{
+  color:#e5e7eb;
+
+  font-size:1.14rem;
+
+  line-height:1.75;
+
+  margin-bottom:28px;
+
+  max-width:60ch;
+
+  margin-inline:auto;
+}
+
+/* note */
+.hero-note{
+  color:#d1d5db;
+
+  font-size:.95rem;
+
+  margin-top:18px;
+
+  max-width:58ch;
+
+  margin-inline:auto;
+}
+
+/* CTA positioning */
+.hero-full .cta-group{
+  justify-content:center;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+  .hero-full{
+    min-height:560px;
+  }
+
+  .hero-overlay{
+    min-height:560px;
+    padding:24px;
+  }
+
+  .hero-full h1{
+    font-size:2.35rem;
+  }
+
+  .hero-subtext{
+    font-size:1rem;
+    line-height:1.65;
+  }
+
+}
+
+
+
