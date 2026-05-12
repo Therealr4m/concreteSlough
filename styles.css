@@ -16,9 +16,8 @@
 
   --radius:14px;
   --radius-lg:20px;
-
-  --shadow-sm:0 6px 16px rgba(31,79,216,.08);
-  --shadow-md:0 16px 36px rgba(31,79,216,.14);
+   --shadow-sm:0 6px 16px rgba(0,0,0,.06);
+   --shadow-md:0 16px 36px rgba(0,0,0,.10);
 
   --max:1180px;
 }
@@ -196,8 +195,59 @@ details[open] .site-nav-link{
   transition:.15s ease;
 }
 
-.trust-item{text-align:center}
 .trust-item strong{font-weight:900}
+
+.trust-bar{
+  gap:18px;
+}
+
+.trust-item{
+  display:flex;
+  align-items:flex-start;
+
+  gap:12px;
+
+  padding:18px 16px;
+
+  background:#fff;
+
+  border:1px solid rgba(31,111,255,.12);
+
+  border-radius:14px;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+  text-align:left;
+}
+
+.trust-icon{
+  flex-shrink:0;
+
+  font-size:1rem;
+
+  margin-top:2px;
+
+  opacity:.9;
+}
+
+.trust-item strong{
+  display:block;
+
+  line-height:1.35;
+
+  font-size:.92rem;
+}
+
+.trust-item .text-small{
+  display:block;
+
+  margin-top:2px;
+
+  font-size:.78rem;
+
+  opacity:.78;
+}
+
 
 /* =====================================================
    CONTENT CARDS
@@ -292,6 +342,7 @@ details[open] .site-nav-link{
   letter-spacing:.2px;
   border:1px solid rgba(0,0,255,.18);
   backdrop-filter:saturate(120%);
+  padding: 12px 18px;
 }
 
 /* Primary CALL button — hero & site-wide */
@@ -303,10 +354,17 @@ details[open] .site-nav-link{
       var(--accent) 100%
     );
   color:#ffffff;
-  box-shadow:
-    0 12px 28px rgba(0,0,255,.35),
+    box-shadow:
+  0 8px 18px rgba(31,79,216,.18),
     inset 0 1px 0 rgba(255,255,255,.4);
     margin-bottom: 7px;
+
+   padding:12px 18px;
+
+font-size:.92rem;
+
+letter-spacing:.01em;
+
 }
 
 .btn--call:hover{
@@ -687,10 +745,13 @@ details[open] .site-nav-link{
     padding-top: 14px;
     padding-bottom: 14px;
     text-align: center;
+    
   }
 
   .site-brand{
-    font-size: 0.95rem;
+     font-size: 0.95rem;
+    
+   
   }
 
   .site-header .btn--call{
@@ -745,8 +806,8 @@ details[open] .site-nav-link{
 
 /* NAV CARDS */
 .nav-card {
-  border: 2px solid rgba(31,111,255,.25);
-  border-left: 6px solid var(--accent-blue);
+  border: 1px solid rgba(31,111,255,.14);
+  border-left: 4px solid var(--accent-blue);
 }
 
 .nav-cta {
@@ -816,6 +877,9 @@ details[open] .site-nav-link{
     gap: 12px;
     margin-top: 20px;
   }
+
+
+
 
   /* 6. TRUST BAR — make it feel like a premium stack, not cramped */
   .trust-bar {
@@ -895,7 +959,7 @@ details[open] .site-nav-link{
 
 .hero-full{
   position:relative;
-  min-height:640px;
+  min-height:600px;
   overflow:hidden;
   box-shadow:0 24px 60px rgba(0,0,0,.18);
   margin-top:28px;
@@ -946,7 +1010,7 @@ details[open] .site-nav-link{
   background:
     radial-gradient(
       circle at top right,
-      rgba(79,111,232,.20),
+      rgba(79,111,232,.10),
       transparent 42%
     );
 
@@ -972,7 +1036,7 @@ details[open] .site-nav-link{
 /* content width */
 .hero-inner{
   width:100%;
-  max-width:760px;
+  max-width:700px;
 }
 
 /* top label */
@@ -1004,7 +1068,7 @@ details[open] .site-nav-link{
 .hero-full h1{
   color:#fff;
 
-  font-size:clamp(2.6rem,5vw,4.3rem);
+  font-size:clamp(2.4rem,4.8vw,3.8rem);
 
   line-height:1.02;
 
