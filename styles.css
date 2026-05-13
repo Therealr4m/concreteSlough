@@ -308,7 +308,6 @@ details[open] .site-nav-link{
 /* =====================================================
    MAP
 ===================================================== */
-
 .map-wrap{
   height:280px;
 }
@@ -317,6 +316,16 @@ details[open] .site-nav-link{
   height:100%;
   object-fit:cover;
 }
+
+.map-image{
+  width:100%;
+  height:auto;
+  border-radius:14px;
+  object-fit:contain;
+  border:1px solid rgba(31,111,255,.14);
+  background:#fff;
+}
+
 
 /* =====================================================
    FOOTER
@@ -456,7 +465,10 @@ letter-spacing:.01em;
 
 .section--cta .cta-group{
   justify-content:center;
+  max-width:720px;
+  margin-inline:auto;
 }
+
 
 
 /* =====================================================
@@ -796,12 +808,12 @@ letter-spacing:.01em;
 
 /* BUTTON POWER */
 .btn--call {
-  box-shadow: 0 12px 30px rgba(31,111,255,.35);
-
+  box-shadow: 0 10px 24px rgba(31,111,255,.22);
+  padding: 9px;
 }
 
-.btn--primary {
-  border: 2px solid var(--accent-blue);
+.btn--primary{
+  border:1px solid rgba(31,111,255,.22);
 }
 
 /* NAV CARDS */
