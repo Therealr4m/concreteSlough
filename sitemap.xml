@@ -13,56 +13,62 @@
     <priority>0.9</priority>
   </url>
 
-
   <url>
     <loc>https://concreteshedbaseslough.co.uk/services/garden-office-concrete-base-slough.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-   <url>
+  <url>
     <loc>https://concreteshedbaseslough.co.uk/services/concrete-base-summerhouse-slough.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-
-   <loc>https://concreteshedbaseslough.co.uk/services/concrete-base-replacement-slough.html</loc>
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/services/concrete-base-replacement-slough.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-     <loc>https://concreteshedbaseslough.co.uk/services/hot-tub-concrete-base-installation-slough.html</loc>
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/services/hot-tub-concrete-base-installation-slough.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-     <loc>https://concreteshedbaseslough.co.uk/locations/maidenhead-concrete-base-installations.html</loc>
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/locations/maidenhead-concrete-base-installations.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-     <loc>https://concreteshedbaseslough.co.uk/locations/langley-concrete-base-installations.html</loc>
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/locations/langley-concrete-base-installations.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-     <loc>https://concreteshedbaseslough.co.uk/locations/uxbridge-concrete-base-installations.html</loc>
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/locations/uxbridge-concrete-base-installations.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-   <loc>https://concreteshedbaseslough.co.uk/locations/windsor-concrete-base-installations.html</loc>
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/locations/windsor-concrete-base-installations.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-     <loc>https://concreteshedbaseslough.co.uk/locations/hayes-concrete-base-installations.html</loc>
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/locations/hayes-concrete-base-installations.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <loc>https://concreteshedbaseslough.co.uk/locations/burnham-concrete-base-installations.html</loc>
+
+  <url>
+    <loc>https://concreteshedbaseslough.co.uk/locations/burnham-concrete-base-installations.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -72,9 +78,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  
-
-
-
-</urlset>
+ </urlset>
