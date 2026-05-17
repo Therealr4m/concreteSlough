@@ -1,18 +1,16 @@
-/* =====================================================
-   CORE THEME — PREMIUM LOCAL SERVICE
-===================================================== */
+
 :root{
-  --brand-black:#1f2933;
-  --brand-blue:#1f4fd8;
-  --brand-light:#4f6fe8;
-  --accent:#1f4fd8;
+  --brand-black:#b8d3ee;
+  --brand-blue:#5b2eff;
+  --brand-light:#a2a4f8;
+  --accent:#8c84ff;
 
-  --bg:#f5f7fb;
-  --card:#ffffff;
-  --border:#d6deee;
+  --bg:#a2a4f8;
+  --card:#108599;
+  --border:#0e47e6;
 
-  --text:#1f2933;
-  --muted:#6b7280;
+  --text:#000000;
+  --muted:#000000;
 
   --radius:14px;
   --radius-lg:20px;
@@ -182,64 +180,6 @@ details[open] .site-nav-link{
   }
 }
 
-/* =====================================================
-   BUTTON FOUNDATION
-===================================================== */
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-
-  padding:10px 16px;
-  min-height:44px;
-  border-radius:10px;
-  font-weight:800;
-  font-size:.88rem;
-
-  letter-spacing:.01em;
-  transition:
-    transform .18s ease,
-    box-shadow .18s ease,
-    background .18s ease;
-
-
-  border:none;
-
-
-  cursor:pointer;
-
-}
-
-/* =====================================================
-   PRIMARY CTA BUTTON
-===================================================== */
-
-.btn--call{
-  background:
-   linear-gradient(
-      180deg,
-      var(--brand-light) 0%,
-      var(--accent) 100%
-    );
-
-  color:#fff;
-
-  box-shadow:
-    0 8px 18px rgba(31,79,216,.16),
-    inset 0 1px 0 rgba(255,255,255,.35);
-}
-
-.btn--call:hover{
-  transform:translateY(-1px);
-  box-shadow:
-    0 12px 24px rgba(31,79,216,.24),
-
-    inset 0 1px 0 rgba(255,255,255,.45);
-
-}
-
-
-
 
 
 
@@ -388,33 +328,6 @@ details[open] .site-nav-link{
 }
 
 
-/* =====================================================
-   CTA ELEVATION — PREMIUM, TRUST-DRIVEN
-===================================================== */
-
-/* Universal CTA baseline upgrade */
-.btn{
-  position:relative;
-  font-size:0.95rem;
-  letter-spacing:.2px;
-  border:1px solid rgba(0,0,255,.18);
-  backdrop-filter:saturate(120%);
-  padding: 12px 18px;
-}
-
-
-/* Secondary CTA (Services etc) */
-.btn--primary{
-  background:#ffffff;
-  color:var(--brand-blue);
-  border:1px solid rgba(0,0,255,.25);
-  box-shadow:var(--shadow-sm);
-}
-
-.btn--primary:hover{
-  background:#f3f5ff;
-  box-shadow:var(--shadow-md);
-}
 
   .gallery-cta{
   text-align:center;
@@ -592,7 +505,7 @@ details[open] .site-nav-link{
 .card--why .eyebrow{
   color: var(--brand-blue);
  font-size: 23px;
- font-weight: 550;
+ font-weight: 650;
 
   text-shadow:
     0 1px 0 rgba(255,255,255,.6),
@@ -601,6 +514,7 @@ details[open] .site-nav-link{
 
 /* Heading */
 .card--why .heading-lg{
+  font-weight: 550;
   color: var(--brand-blue);
 
   text-shadow:
@@ -772,11 +686,9 @@ details[open] .site-nav-link{
 
   .site-brand{
      font-size: 0.95rem;
-    
-   
   }
 
-  .site-header .btn--call{
+  .site-header {
     width: 100%;
     max-width: 320px;
     justify-content: center;
@@ -816,22 +728,6 @@ details[open] .site-nav-link{
   color: var(--accent-blue);
 }
 
-
-.btn--call{
-  padding:10px 16px;
-
-  min-height:44px;
-
-  font-size:.88rem;
-
-  letter-spacing:.01em;
-
-  border-radius:10px;
-}
-
-.btn--primary{
-  border:1px solid rgba(31,111,255,.22);
-}
 
 /* NAV CARDS */
 .nav-card {
@@ -897,10 +793,7 @@ details[open] .site-nav-link{
   }
 
   /* 5. CTA — make it feel solid and thumb-friendly */
-  .btn {
-    min-height: 52px;
-    font-size: 1rem;
-  }
+ 
 
   .cta-group{
   gap: 10px;
@@ -1150,8 +1043,141 @@ font-weight: 500;
     font-size:1rem;
     line-height:1.65;
   }
+}
+/* =====================================================
+   BUTTONS
+===================================================== */
 
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  padding:6px 12px;
+
+  border-radius:8px;
+
+  font-size:.84rem;
+  font-weight:700;
+  letter-spacing:.01em;
+
+  border:none;
+
+  cursor:pointer;
+
+  transition:
+    background .18s ease,
+    transform .18s ease;
 }
 
+/* PRIMARY CTA */
+.btn--call{
+  background:#5b77e9;
+  color:#ffffff;
+ 
+}
 
+/* subtle hover */
+.btn--call:hover{
+  background:#052fbb;
+  transform:translateY(-1px);
+}
 
+/* CTA spacing */
+.cta-group{
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:10px;
+  margin-top:18px;
+  margin-bottom:10px;
+}
+
+/* MOBILE */
+@media(max-width:640px){
+
+  .cta-group{
+    flex-direction:column;
+  }
+
+  .cta-group .btn{
+    width:100%;
+  }
+}
+
+/* Secondary / Blog Buttons */
+.btn--primary{
+  background:#838899;
+  color:#ffffff;
+
+  padding:7px 12px;
+
+  border-radius:8px;
+  border:none;
+
+  font-size:.84rem;
+  font-weight:700;
+
+  transition:
+    background .18s ease,
+    transform .18s ease;
+}
+
+.btn--primary:hover{
+  background:#859ee2;
+  transform:translateY(-1px);
+}
+
+/* STICKY CTA */
+.sticky-cta{
+  position:fixed;
+  right:18px;
+  top:50%;
+  transform:translateY(-50%);
+  width:220px;
+  background:#fff;
+  border:1px solid rgba(31,79,216,.12);
+  border-radius:12px;
+
+  padding:10px;
+
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+  z-index:999;
+
+  opacity:0;
+  pointer-events:none;
+
+  transition:opacity .2s ease;
+}
+
+.sticky-cta.show{
+  opacity:1;
+  pointer-events:auto;
+}
+
+.sticky-cta-title{
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.sticky-cta-text{
+  font-size:.84rem;
+  color:var(--muted);
+
+  margin-bottom:12px;
+}
+
+.sticky-cta-close{
+  position:absolute;
+
+  top:6px;
+  right:8px;
+
+  border:none;
+  background:none;
+
+  cursor:pointer;
+
+  color:var(--muted);
+}
