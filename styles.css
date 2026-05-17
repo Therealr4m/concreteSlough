@@ -181,19 +181,67 @@ details[open] .site-nav-link{
     background: rgba(31,79,216,.06);
   }
 }
-/* =====================================================
-   BUTTONS — CALL-FOCUSED
-===================================================== */
 
+/* =====================================================
+   BUTTON FOUNDATION
+===================================================== */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:14px 22px;
-  border-radius:12px;
-  font-weight:900;
-  transition:.15s ease;
+
+  padding:10px 16px;
+  min-height:44px;
+  border-radius:10px;
+  font-weight:800;
+  font-size:.88rem;
+
+  letter-spacing:.01em;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background .18s ease;
+
+
+  border:none;
+
+
+  cursor:pointer;
+
 }
+
+/* =====================================================
+   PRIMARY CTA BUTTON
+===================================================== */
+
+.btn--call{
+  background:
+   linear-gradient(
+      180deg,
+      var(--brand-light) 0%,
+      var(--accent) 100%
+    );
+
+  color:#fff;
+
+  box-shadow:
+    0 8px 18px rgba(31,79,216,.16),
+    inset 0 1px 0 rgba(255,255,255,.35);
+}
+
+.btn--call:hover{
+  transform:translateY(-1px);
+  box-shadow:
+    0 12px 24px rgba(31,79,216,.24),
+
+    inset 0 1px 0 rgba(255,255,255,.45);
+
+}
+
+
+
+
+
 
 .trust-item strong{font-weight:900}
 
@@ -354,35 +402,6 @@ details[open] .site-nav-link{
   padding: 12px 18px;
 }
 
-/* Primary CALL button — hero & site-wide */
-.btn--call{
-  background:
-    linear-gradient(
-      180deg,
-      var(--brand-light) 0%,
-      var(--accent) 100%
-    );
-  color:#ffffff;
-    box-shadow:
-  0 8px 18px rgba(31,79,216,.18),
-    inset 0 1px 0 rgba(255,255,255,.4);
-    margin-bottom: 7px;
-
-   padding:12px 18px;
-
-font-size:.92rem;
-
-letter-spacing:.01em;
-
-}
-
-.btn--call:hover{
-  transform:translateY(-2px);
-  box-shadow:
-    0 18px 36px rgba(0,0,255,.45),
-    inset 0 1px 0 rgba(255,255,255,.55);
-    
-}
 
 /* Secondary CTA (Services etc) */
 .btn--primary{
@@ -468,8 +487,6 @@ letter-spacing:.01em;
   max-width:720px;
   margin-inline:auto;
 }
-
-
 
 /* =====================================================
    NAV CARDS — CLEAN, UNAMBIGUOUS, TRUST-LED
@@ -580,8 +597,6 @@ letter-spacing:.01em;
   text-shadow:
     0 1px 0 rgba(255,255,255,.6),
     0 0 8px rgba(31,79,216,.18);
-    
-
 }
 
 /* Heading */
@@ -591,7 +606,6 @@ letter-spacing:.01em;
   text-shadow:
     0 1px 0 rgba(255,255,255,.6),
     0 0 8px rgba(31,79,216,.18);
-    
 }
 
 /* List ticks */
@@ -599,9 +613,6 @@ letter-spacing:.01em;
   color: var(--brand-blue);
   text-shadow: 0 0 6px rgba(31,79,216,.2);
 }
-
-
-
 
 /* =====================================================
    HELPFUL LINKS — LOW-INTENT INTERNAL NAV
@@ -641,7 +652,6 @@ letter-spacing:.01em;
 .helpful-links a:hover{
   text-decoration:underline;
 }
-
 
 /* -------------------------------------
    IMAGE GRID DISCIPLINE (DESKTOP)
@@ -806,10 +816,17 @@ letter-spacing:.01em;
   color: var(--accent-blue);
 }
 
-/* BUTTON POWER */
-.btn--call {
-  box-shadow: 0 10px 24px rgba(31,111,255,.22);
-  padding: 9px;
+
+.btn--call{
+  padding:10px 16px;
+
+  min-height:44px;
+
+  font-size:.88rem;
+
+  letter-spacing:.01em;
+
+  border-radius:10px;
 }
 
 .btn--primary{
@@ -885,12 +902,10 @@ letter-spacing:.01em;
     font-size: 1rem;
   }
 
-  .cta-group {
-    gap: 12px;
-    margin-top: 20px;
-  }
-
-
+  .cta-group{
+  gap: 10px;
+  margin-top:18px;
+ }
 
 
   /* 6. TRUST BAR — make it feel like a premium stack, not cramped */
@@ -1059,14 +1074,14 @@ letter-spacing:.01em;
 
   color:#fff;
 
-  padding:9px 16px;
+  padding:7px 14px;
 
   border-radius:999px;
 
-  font-size:.78rem;
+  font-size:.72rem;
   font-weight:800;
 
-  letter-spacing:.06em;
+  letter-spacing:.08em;
 
   margin-bottom:18px;
 
@@ -1075,34 +1090,25 @@ letter-spacing:.01em;
   border:1px solid rgba(255,255,255,.18);
 }
 
-
 /* headline */
 .hero-full h1{
   color:#fff;
-
   font-size:clamp(2.4rem,4.8vw,3.8rem);
-
   line-height:1.02;
-
-  font-weight:900;
-
-  letter-spacing:-0.04em;
-
+  font-weight:970;
+  letter-spacing:-0.05em;
   margin-bottom:18px;
+  text-wrap:balance;
 }
 
 /* subtext */
 .hero-subtext{
-  color:#e5e7eb;
-
+  color:#f3f4f6;
+font-weight: 500;
   font-size:1.14rem;
-
   line-height:1.75;
-
-  margin-bottom:28px;
-
+  margin-bottom:20px;
   max-width:60ch;
-
   margin-inline:auto;
 }
 
