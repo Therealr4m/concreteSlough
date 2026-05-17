@@ -1,75 +1,44 @@
-const stickyCTA = document.getElementById('stickyCTA');
+const stickyCTA = document.getElementById("stickyCTA");
+const stickyClose = document.getElementById("stickyClose");
 
-const stickyClose = document.getElementById('stickyClose');
+let hasAppeared = false;
 
+window.addEventListener("scroll", () => {
 
+  const scrollY = window.scrollY;
 
-let ctaVisible = false;
+  if (scrollY > 900 && !hasAppeared) {
 
-let hideTimer;
+    hasAppeared = true;
 
+    stickyCTA.classList.add("show");
 
+    setTimeout(() => {
 
-function showCTA(){
+      stickyCTA.classList.remove("show");
 
+      setTimeout(() => {
+        hasAppeared = false;
+      }, 12000);
 
-
-  if(ctaVisible) return;
-
-
-
-  ctaVisible = true;
-
-
-
-  stickyCTA.classList.add('show');
-
-
-
-  hideTimer = setTimeout(() => {
-
-    stickyCTA.classList.remove('show');
-
-    ctaVisible = false;
-
-  }, 5000);
-
-
-
-}
-
-
-
-window.addEventListener('scroll', () => {
-
-
-
-  if(window.scrollY > 700 && !ctaVisible){
-
-    showCTA();
+    }, 3500);
 
   }
 
+});
 
+stickyClose.addEventListener("click", () => {
+
+  stickyCTA.classList.remove("show");
+
+  hasAppeared = true;
+
+  setTimeout(() => {
+    hasAppeared = false;
+  }, 12000);
 
 });
 
 
 
-stickyClose.addEventListener('click', () => {
 
-
-
-  stickyCTA.classList.remove('show');
-
-
-
-  clearTimeout(hideTimer);
-
-
-
-  ctaVisible = false;
-
-
-
-});
