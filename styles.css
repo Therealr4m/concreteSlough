@@ -510,6 +510,8 @@ details[open] .site-nav-link{
   list-style:none;
   padding:0;
   margin:0;
+  color: #052fbb;
+  font-weight: 600;
 }
 
 .helpful-links li{
