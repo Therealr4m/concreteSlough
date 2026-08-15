@@ -1054,64 +1054,6 @@ box-shadow:var(--shadow-md);
 }
 
 
-/* =========================================
-FIXED CALL CTA
-========================================= */
-.fixed-call-cta{
-position:fixed;
-top:50%;
-right:-155px;
-transform:translateY(-50%);
-display:flex;
-align-items:center;
-justify-content:center;
-width:220px;
-height:54px;
-padding:0 18px;
-background:var(--brand-blue);
-color:#fff;
-font-size:.88rem;
-font-weight:700;
-letter-spacing:.2px;
-text-decoration:none;
-border:2px solid var(--border);
-border-right:none;
-border-radius:14px 0 0 14px;
-box-shadow:var(--shadow-md);
-transition:
-right .25s ease,
-background .2s ease;
-z-index:9999;
-
-}
-.fixed-call-cta:hover{
-right:0;
-background:#4b24e0;
-}
-
-/* =========================================
-MOBILE
-========================================= */
-@media(max-width:768px){
-.fixed-call-cta{
-top:auto;
-bottom:18px;
-right:50%;
-
-transform:translateX(50%);
-width:calc(100% - 32px);
-max-width:360px;
-height:52px;
-border-radius:14px;
-border:2px solid var(--border);
-font-size:.9rem;
-}
-
-.fixed-call-cta:hover{
-right:50%;
-}
-}
-
 
 
 /* CTA spacing */
@@ -1733,5 +1675,216 @@ padding-left:0;
 }
 
 
+
+/* =========================================
+   FIXED CALL CTA
+========================================= */
+
+.fixed-call-cta{
+  position:fixed;
+  top:50%;
+  right:-155px;
+
+  transform:translateY(-50%);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  width:220px;
+  height:54px;
+  padding:0 18px;
+
+  background:var(--brand-blue);
+  color:#fff;
+
+  font-size:.88rem;
+  font-weight:700;
+  letter-spacing:.2px;
+
+  text-decoration:none;
+
+  border:2px solid var(--border);
+  border-right:none;
+  border-radius:14px 0 0 14px;
+
+  box-shadow:var(--shadow-md);
+
+  transition:
+    right .25s ease,
+    background .2s ease;
+
+  z-index:9999;
+}
+
+.fixed-call-cta:hover{
+  right:0;
+  background:#4b24e0;
+}
+
+
+/* =========================================
+   FIXED WHATSAPP CTA
+========================================= */
+
+.whatsapp-float{
+  position:fixed;
+
+  left:20px;
+  bottom:20px;
+
+  z-index:9998;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:9px;
+
+  padding:12px 18px;
+
+  background:#25D366;
+  color:#fff;
+
+  border-radius:50px;
+
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  font-size:14px;
+  font-weight:700;
+  line-height:1;
+
+  text-decoration:none;
+
+  box-shadow:0 8px 22px rgba(0,0,0,.18);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+
+/* WHATSAPP ICON */
+
+.whatsapp-icon{
+  width:22px;
+  height:22px;
+
+  fill:currentColor;
+
+  flex-shrink:0;
+}
+
+
+/* WHATSAPP TEXT */
+
+.whatsapp-text{
+  display:block;
+  white-space:nowrap;
+}
+
+
+/* WHATSAPP HOVER */
+
+.whatsapp-float:hover{
+  transform:translateY(-2px);
+
+  box-shadow:0 10px 26px rgba(0,0,0,.22);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+  /* CALL — BOTTOM RIGHT */
+
+  .fixed-call-cta{
+    top:auto;
+    bottom:15px;
+    right:15px;
+
+    transform:none;
+
+    width:auto;
+    min-width:150px;
+    height:50px;
+
+    padding:0 9px;
+
+    border-radius:14px;
+    border:2px solid var(--border);
+
+    font-size:.86rem;
+
+    box-shadow:var(--shadow-md);
+  }
+
+  .fixed-call-cta:hover{
+    right:15px;
+    background:var(--brand-blue);
+  }
+
+
+  /* WHATSAPP — BOTTOM LEFT */
+
+  .whatsapp-float{
+    left:15px;
+    bottom:45px;
+
+    padding:15px 16px;
+
+    gap:8px;
+
+    font-size:13px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.17);
+
+  }
+
+  .whatsapp-icon{
+    width:21px;
+    height:21px;
+    
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE SCREENS
+========================================= */
+
+@media(max-width:380px){
+
+  .fixed-call-cta{
+    right:12px;
+    bottom:12px;
+
+    min-width:140px;
+    height:48px;
+
+    padding:0 14px;
+
+    font-size:.82rem;
+  }
+
+
+  .whatsapp-float{
+    left:12px;
+    bottom:12px;
+
+    padding:10px 13px;
+
+    font-size:12.5px;
+  }
+
+  .whatsapp-icon{
+    width:20px;
+    height:20px;
+  }
+
+}
 
 
