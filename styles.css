@@ -2340,5 +2340,73 @@ padding-left:0;
 
 }
 
+/* =========================================================
+   SLOUGH BRANDING — supplied blue logo
+   Scoped styles: preserve existing site navigation/layout.
+========================================================= */
+.site-brand a.slough-brand-link,
+.slough-blog-header a.slough-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  max-width: 100%;
+  margin-right: 0;
+  text-decoration: none;
+}
 
+.slough-brand-logo {
+  display: block;
+  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 8px;
+}
 
+.slough-brand-text {
+  min-width: 0;
+  font: inherit;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+/* The four guide pages did not previously have a site header. */
+.slough-blog-header {
+  display: flex;
+  align-items: center;
+  max-width: 1180px;
+  margin: 18px auto 8px;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+}
+
+.slough-blog-header .slough-brand-link {
+  color: #171717;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+@media (max-width: 480px) {
+  .site-brand a.slough-brand-link,
+  .slough-blog-header a.slough-brand-link {
+    gap: 8px;
+    margin-right: 0;
+  }
+
+  .slough-brand-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slough-brand-text {
+    font-size: 0.91rem;
+  }
+
+  .slough-blog-header {
+    margin: 12px 10px 6px;
+    padding: 10px 12px;
+  }
+}

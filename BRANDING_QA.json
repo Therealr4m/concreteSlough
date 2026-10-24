@@ -1,0 +1,169 @@
+{
+  "html_pages": 31,
+  "existing_header_pages": 27,
+  "article_brand_strip_pages": 4,
+  "headings_preserved": true,
+  "existing_text_preserved": true,
+  "metadata_preserved": true,
+  "navigation_links_preserved": true,
+  "icon_links": true,
+  "logo_links": true,
+  "css_original_prefix_same": true,
+  "details": [
+    {
+      "file": "blogs/do-you-need-planning-permission-for-concrete-base-in-slough.html",
+      "headings": 14,
+      "passed": true
+    },
+    {
+      "file": "blogs/how-much-a-concrete-shed-base-costs-slough.html",
+      "headings": 10,
+      "passed": true
+    },
+    {
+      "file": "blogs/what-makes-a-concrete-base-structurally-strong-slough.html",
+      "headings": 14,
+      "passed": true
+    },
+    {
+      "file": "blogs/why-some-shed-bases-sink-slough.html",
+      "headings": 13,
+      "passed": true
+    },
+    {
+      "file": "concrete-shed-base-installation-slough.html",
+      "headings": 14,
+      "passed": true
+    },
+    {
+      "file": "contact-concrete-shed-base-slough.html",
+      "headings": 7,
+      "passed": true
+    },
+    {
+      "file": "index.html",
+      "headings": 21,
+      "passed": true
+    },
+    {
+      "file": "locations/beaconsfield-concrete-base-installations.html",
+      "headings": 13,
+      "passed": true
+    },
+    {
+      "file": "locations/burnham-concrete-base-installations.html",
+      "headings": 13,
+      "passed": true
+    },
+    {
+      "file": "locations/chalfont-st-peter-concrete-base-installations.html",
+      "headings": 13,
+      "passed": true
+    },
+    {
+      "file": "locations/cippenham-concrete-base-installations.html",
+      "headings": 12,
+      "passed": true
+    },
+    {
+      "file": "locations/egham-concrete-foundation-installation.html",
+      "headings": 14,
+      "passed": true
+    },
+    {
+      "file": "locations/hayes-concrete-base-installations.html",
+      "headings": 11,
+      "passed": true
+    },
+    {
+      "file": "locations/high-wycombe-concrete-foundation-installation.html",
+      "headings": 17,
+      "passed": true
+    },
+    {
+      "file": "locations/langley-concrete-base-installations.html",
+      "headings": 11,
+      "passed": true
+    },
+    {
+      "file": "locations/maidenhead-concrete-base-installations.html",
+      "headings": 11,
+      "passed": true
+    },
+    {
+      "file": "locations/staines-upon-thames-concrete-base-installations.html",
+      "headings": 11,
+      "passed": true
+    },
+    {
+      "file": "locations/uxbridge-concrete-base-installations.html",
+      "headings": 15,
+      "passed": true
+    },
+    {
+      "file": "locations/west-drayton-concrete-foundation-installation.html",
+      "headings": 12,
+      "passed": true
+    },
+    {
+      "file": "locations/windsor-concrete-base-installations.html",
+      "headings": 11,
+      "passed": true
+    },
+    {
+      "file": "services/bespoke-concrete-base-installation-slough.html",
+      "headings": 25,
+      "passed": true
+    },
+    {
+      "file": "services/concrete-base-replacement-slough.html",
+      "headings": 13,
+      "passed": true
+    },
+    {
+      "file": "services/concrete-base-summerhouse-slough.html",
+      "headings": 16,
+      "passed": true
+    },
+    {
+      "file": "services/concrete-floor-slab-installation-slough.html",
+      "headings": 19,
+      "passed": true
+    },
+    {
+      "file": "services/concrete-patio-installation-slough.html",
+      "headings": 39,
+      "passed": true
+    },
+    {
+      "file": "services/concrete-steps-and-walkway-installation-slough.html",
+      "headings": 20,
+      "passed": true
+    },
+    {
+      "file": "services/difficult-access-concrete-base-installation-slough.html",
+      "headings": 23,
+      "passed": true
+    },
+    {
+      "file": "services/garden-office-concrete-base-slough.html",
+      "headings": 12,
+      "passed": true
+    },
+    {
+      "file": "services/hot-tub-concrete-base-installation-slough.html",
+      "headings": 12,
+      "passed": true
+    },
+    {
+      "file": "services/strip-foundation-installation-slough.html",
+      "headings": 22,
+      "passed": true
+    },
+    {
+      "file": "services/uneven-ground-concrete-base-installation-slough.html",
+      "headings": 29,
+      "passed": true
+    }
+  ]
+}
