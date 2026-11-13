@@ -320,28 +320,166 @@
 </div>
          </section>
 
-   
-   <section class="section section--content section--why">
-  <div class="layout-row">
-    <div class="layout-main card card--why">
 
-      <span class="eyebrow">
-        Why Call Us For Your Concrete Bases 
-      </span>
-      <ul class="list">
 
-         <li><strong>12 Years Of Experience Installing Concrete Bases</strong></li>
-         <li><strong>Free Estimates & Same Week site visits</strong>
-        <li><strong>Concrete Performance Guarantees </strong></li>
-        <li><strong>Local Slough Concrete Base Service</strong></li>
-      </ul>
-    </div>
+    <section class="cbp" id="concrete-project-planner" aria-labelledby="cbp-heading">
+  <div class="cbp__shell">
+    <header class="cbp__header">
+      <span class="cbp__eyebrow">FREE PROJECT PLANNER</span>
+      <h2 id="cbp-heading">Plan Your Concrete Base</h2>
+      <p>Tell us a little about your project. Get an instant size calculation and practical points to consider before requesting a quote.</p>
+    </header>
+
+    <form class="cbp__form" id="cbp-form" novalidate>
+      <fieldset class="cbp__group">
+        <legend><span class="cbp__number">01</span> What are your base dimensions?</legend>
+        <p class="cbp__hint">Enter the planned base size in metres.</p>
+
+        <div class="cbp__columns">
+          <label class="cbp__field">
+            Length (m)
+            <input id="cbp-length" name="length" type="number" min="0.1" max="100" step="0.1" inputmode="decimal" placeholder="e.g. 5" required>
+          </label>
+
+          <label class="cbp__field">
+            Width (m)
+            <input id="cbp-width" name="width" type="number" min="0.1" max="100" step="0.1" inputmode="decimal" placeholder="e.g. 4" required>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="cbp__group">
+        <legend><span class="cbp__number">02</span> What will the base support?</legend>
+
+        <div class="cbp__options" data-group="structure">
+          <label class="cbp__option">
+            <input type="radio" name="structure" value="shed" required>
+            <span>Garden shed</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="structure" value="garden-room">
+            <span>Garden room / office</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="structure" value="garage">
+            <span>Garage</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="structure" value="other">
+            <span>Other outdoor structure</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="cbp__group">
+        <legend><span class="cbp__number">03</span> What is the ground like?</legend>
+
+        <div class="cbp__options" data-group="ground">
+          <label class="cbp__option">
+            <input type="radio" name="ground" value="level" required>
+            <span>Level / firm</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="ground" value="uneven">
+            <span>Uneven / sloping</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="ground" value="soft">
+            <span>Soft / unstable</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="cbp__group">
+        <legend><span class="cbp__number">04</span> How can installers access the area?</legend>
+
+        <div class="cbp__options" data-group="access">
+          <label class="cbp__option">
+            <input type="radio" name="access" value="clear" required>
+            <span>Clear side / driveway access</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="access" value="narrow">
+            <span>Narrow side passage</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="access" value="through-house">
+            <span>Through the property</span>
+          </label>
+
+          <label class="cbp__option">
+            <input type="radio" name="access" value="open">
+            <span>Open / direct access</span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="cbp__actions">
+        <button class="cbp__button" type="submit">
+          See My Project Plan
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="cbp__error" id="cbp-error" role="alert" hidden>
+          Please complete every question and enter valid dimensions.
+        </p>
+      </div>
+    </form>
+
+    <section class="cbp__results" id="cbp-results" aria-live="polite" aria-labelledby="cbp-results-heading" hidden>
+      <span class="cbp__eyebrow">YOUR PROJECT SUMMARY</span>
+      <h3 id="cbp-results-heading">Your Concrete Base Plan</h3>
+
+      <div class="cbp__stats">
+        <div class="cbp__stat">
+          <span>Base area</span>
+          <strong id="cbp-area">—</strong>
+        </div>
+
+        <div class="cbp__stat">
+          <span>Illustrative concrete volume*</span>
+          <strong id="cbp-volume">—</strong>
+        </div>
+      </div>
+
+      <p class="cbp__result-summary" id="cbp-summary"></p>
+
+      <h4>What to consider</h4>
+      <ul class="cbp__considerations" id="cbp-considerations"></ul>
+
+      <p class="cbp__disclaimer">
+        *Volume assumes a hypothetical 100–150mm slab solely to illustrate the calculation.
+        Actual slab thickness, concrete specification, sub-base, reinforcement and foundations
+        must be assessed and specified for your site and structure by a competent professional.
+        These results are not a structural design or a quote.
+      </p>
+
+      <div class="cbp__result-actions">
+        <a class="cbp__button cbp__quote" href="#contact">
+          Request a Concrete Base Quote
+          <span aria-hidden="true">→</span>
+        </a>
+
+        <button class="cbp__reset" id="cbp-reset" type="button">
+          Start again
+        </button>
+      </div>
+    </section>
   </div>
-  </section>
+</section>
 
 
-  
 
+
+
+   
 <section class="section domestic-services" id="domestic-concrete-services">
   <div class="domestic-services-inner">
 
@@ -352,6 +490,8 @@
         for homeowners across Slough.
       </p>
     </div>
+
+
 
     <div class="domestic-services-grid">
 
@@ -423,9 +563,27 @@
 </section>
 
 
-<!-- llogo done -->
+
+   <section class="section section--content section--why">
+  <div class="layout-row">
+    <div class="layout-main card card--why">
+
+      <span class="eyebrow">
+        Why Call Us For Your Concrete Bases 
+      </span>
+      <ul class="list">
+
+         <li><strong>12+ years experience installing concrete bases</strong></li>
+         <li><strong>Free estimates & same week site visits</strong>
+        <li><strong>concrete performance guarantees </strong></li>
+        <li><strong>local Slough domestic concrete services</strong></li>
+      </ul>
+    </div>
+  </div>
+  </section>
 
 
+  
   <!-- GALLERY -->
   <section class="section section--gallery card">
     
@@ -826,6 +984,10 @@
 </footer>
 
 <script src="/nav.js"></script>
+
+
+
+<script src="/concrete-planner.js"></script>
 
 </body>
 </html>
