@@ -262,6 +262,9 @@ border-radius:16px;
 
 
 
+
+
+
 /* =====================================================
    NAV CARDS — CLEAN, UNAMBIGUOUS, TRUST-LED
 ===================================================== */
@@ -2601,5 +2604,172 @@ padding-left:0;
   .cbp__columns,.cbp__options,.cbp__stats{grid-template-columns:1fr}
   .cbp__button{width:100%}
   .cbp__result-actions{flex-direction:column}
+}
+
+/* CONCRETE TRUST — CLEAN PREMIUM STYLE */
+
+.concrete-trust{
+  width:100%;
+  margin:24px 0 30px;
+}
+
+.concrete-trust__inner{
+  padding:0;
+  background:transparent;
+  border:0;
+  box-shadow:none;
+}
+
+.concrete-trust__heading{
+  display:block;
+  font-size:17px;
+  font-weight:800;
+  line-height:1.4;
+  color:#202035;
+  margin-bottom:22px;
+}
+
+.concrete-trust__list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px 28px;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.concrete-trust__list li{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:16px;
+  line-height:1.5;
+  color:#202030;
+}
+
+.concrete-trust__list li::before{
+  content:"✓";
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 25px;
+  width:25px;
+  height:25px;
+  border-radius:7px;
+  background:#e8efff;
+  color:#0e47e6;
+  font-size:16px;
+  font-weight:800;
+}
+
+.concrete-trust__list strong{
+  font-weight:600;
+}
+
+@media(max-width:650px){
+  .concrete-trust{
+    margin:18px 0 24px;
+  }
+
+  .concrete-trust__heading{
+    font-size:18px;
+    margin-bottom:20px;
+  }
+
+  .concrete-trust__list{
+    grid-template-columns:1fr;
+    gap:17px;
+  }
+
+  .concrete-trust__list li{
+    font-size:16px;
+    align-items:flex-start;
+  }
+
+  .concrete-trust__list li::before{
+    margin-top:1px;
+  }
+}
+
+
+
+/* CONCRETE BASE PLANNING SECTION */
+
+.base-planning__eyebrow{
+  display:block;
+  margin-bottom:10px;
+  color:#4530bd;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.base-planning__details{
+  margin-top:26px;
+  padding-top:22px;
+  border-top:1px solid #e4e4ef;
+}
+
+.base-planning__title{
+  margin:0 0 18px;
+  color:#171727;
+  font-size:19px;
+  font-weight:750;
+  line-height:1.4;
+}
+
+.base-planning__list{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px 24px;
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+.base-planning__list li{
+  display:flex;
+  align-items:flex-start;
+  gap:11px;
+  color:#252535;
+  font-size:15px;
+  font-weight:600;
+  line-height:1.55;
+}
+
+.base-planning__list li::before{
+  content:"✓";
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 24px;
+  width:24px;
+  height:24px;
+  border-radius:6px;
+  background:#e8efff;
+  color:#0e47e6;
+  font-size:15px;
+  font-weight:800;
+}
+
+@media(max-width:650px){
+  .base-planning__details{
+    margin-top:22px;
+    padding-top:20px;
+  }
+
+  .base-planning__title{
+    font-size:18px;
+  }
+
+  .base-planning__list{
+    grid-template-columns:1fr;
+    gap:15px;
+  }
+
+  .base-planning__list li{
+    font-size:16px;
+  }
 }
 
